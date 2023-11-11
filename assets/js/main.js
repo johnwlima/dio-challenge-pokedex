@@ -3,13 +3,13 @@ function convertPokemonToLi (pokemon) {
     return `
     
     <li class="pokemon ${pokemon.mainType}">
-        <span class="number">#${pokemon.number}</span>
+        <span class="number ${pokemon.mainType}">#${pokemon.number}</span>
         <span class="name">${pokemon.name}</span>
 
         <div class="details">
 
             <ol class="types">
-                ${pokemon.types.map((type) => `<li class="type">${type}</li>` ).join('')}
+                ${pokemon.types.map((type) => `<li class="type ${pokemon.mainType}">${type}</li>` ).join('')}
             </ol>
 
             <img src="${pokemon.image}" 
