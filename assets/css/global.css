@@ -1,7 +1,9 @@
 /* varibles */
 :root {
+    --white: hsl(0, 0%, 100%);
     --font-color-light: hsl(0, 0%, 95%);
     --font-color-dark: hsl(0, 0%, 5%);
+    --background:  hsl(180, 5%, 87%);
 
     --green-leaf: hsl(166, 59%, 55%);
     --green-leaf-light: hsl(166, 59%, 75%);
@@ -21,10 +23,20 @@ ol,ul, li {
     padding: 0;
 }
 
+body {
+    background-color: var(--background);
+}
 
 .content {
     padding: 1rem;
-    width: 100%;
+    width: min(100%, 768px);
+    /* background-color: var(--white); */
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        margin: 0 auto;
+    }
 }
 
 .content h1 {
@@ -38,15 +50,32 @@ ol,ul, li {
     gap: .5rem;
 }
 
+@media screen and (min-width: 425px) {
+    .pokemons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pokemons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .5rem;
+    }
+}
+
 .pokemon {
     display: flex;
     flex-direction: column;
 
-    padding: .5rem;
+    /* padding: max(.5rem,3%); */
+    padding: clamp(.5rem, 2vw ,1rem);
     background-color: var(--green-leaf);
     color: var(--font-color-light);
     border-radius: 1rem;
-    min-height: 100px;
+    min-height: 6.25rem;
     width: 100%;
 }
 
@@ -56,7 +85,7 @@ ol,ul, li {
 }
 
 ol.pokemons li img {
-    width: 55%;
+    width: 50%;
 }
 
 .pokemon .details {
@@ -72,14 +101,16 @@ ol.pokemons li img {
     justify-content: space-between;
     color:  var(--font-color-light);
 
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1vw, 2rem);
 }
 
 .type {
     background-color: var(--green-leaf-light);
-    margin-top: .25rem;
+    margin-top: .3rem;
     padding: .25rem;
     text-align: center;
     border-radius: .5rem;
     color: var(--green-leaf-dark);
+
+    font-size: clamp(.75rem, 4vw, 1rem);
 }
