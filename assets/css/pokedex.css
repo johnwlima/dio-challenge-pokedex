@@ -146,6 +146,7 @@ ol.pokemons li img {
   align-items: center;
   justify-content: space-between;
   color: var(--font-color-light);
+  text-transform: capitalize;
 
   font-size: clamp(1rem, 1vw, 2rem);
 }
