@@ -1,5 +1,6 @@
 @forward "colors";
 @forward "boilerplates";
+@forward "../components/pokedex";
 
 .content {
   padding: 1rem;
@@ -45,3 +46,4 @@
     margin: 0 auto;
   }
 }
+
