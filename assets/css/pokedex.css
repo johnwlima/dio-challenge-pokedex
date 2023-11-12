@@ -38,8 +38,8 @@
 .pokemon.water {
   background-color: var(--water);
 }
-.pokemon.eletric {
-  background-color: var(--eletric);
+.pokemon.electric {
+  background-color: var(--electric);
 }
 .pokemon.ice {
   background-color: var(--ice);
@@ -100,9 +100,9 @@
   box-shadow: 0 0 10px 0 var(--water-dark);
   background-color: var(--water);
 }
-.pokemon.eletric:hover {
-  box-shadow: 0 0 10px 0 var(--eletric-dark);
-  background-color: var(--eletric);
+.pokemon.electric:hover {
+  box-shadow: 0 0 10px 0 var(--electric-dark);
+  background-color: var(--electric);
 }
 .pokemon.ice:hover {
   box-shadow: 0 0 10px 0 var(--ice-dark);
@@ -175,8 +175,8 @@
 .number.water {
   color: var(--water-dark);
 }
-.number.eletric {
-  color: var(--eletric-dark);
+.number.electric {
+  color: var(--electric-dark);
 }
 .number.ice {
   color: var(--ice-dark);
@@ -206,16 +206,16 @@
   color: var(--bug-dark);
 }
 .number.ghost {
-  background-color: var(--ghost-dark);
+  color: var(--ghost-dark);
 }
 .number.steel {
-  background-color: var(--steel-dark);
+  color: var(--steel-dark);
 }
 .number.dragon {
-  background-color: var(--dragon-dark);
+  color: var(--dragon-dark);
 }
 .number.fairy {
-  background-color: var(--fairy-dark);
+  color: var(--fairy-dark);
 }
 
 ol.pokemons li img {
@@ -265,9 +265,9 @@ ol.pokemons li img {
   background-color: var(--water-light);
   color: var(--water-dark);
 }
-.type.eletric {
-  background-color: var(--eletric-light);
-  color: var(--eletric-dark);
+.type.electric {
+  background-color: var(--electric-light);
+  color: var(--electric-dark);
 }
 .type.ice {
   background-color: var(--ice-light);
