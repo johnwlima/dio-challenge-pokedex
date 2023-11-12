@@ -5,9 +5,7 @@
   --font-color-dark: hsl(0, 0%, 5%);
   --background: hsl(180, 5%, 87%);
 
-  --green-leaf: hsl(166, 59%, 55%);
-  --green-leaf-light: hsl(166, 59%, 75%);
-  --green-leaf-dark: hsl(166, 59%, 35%);
+  --purple: hsl(271, 70%, 46%);
 
   --normal: hsl(62, 22%, 56%);
   --grass:hsl(101, 52%, 55%);
@@ -91,6 +89,34 @@ body {
   padding: 1rem;
   width: min(100%, 768px);
   /* background-color: var(--white); */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.pagination button {
+  background-color: var(--purple);
+  color: var(--font-color-light);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  transition: .3s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: var(--purple);
+  color: var(--font-color-light);
+  box-shadow: 0px 0px 5px var(--purple);
+  transform: scale(1.1);
 }
 
 .content h1 {

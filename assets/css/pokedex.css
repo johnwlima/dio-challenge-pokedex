@@ -14,6 +14,16 @@
   border-radius: 1rem;
   min-height: 6.25rem;
   width: 100%;
+  cursor: pointer;
+
+  transition: .2s;
+  transition-timing-function: cubic-bezier(0,-0.2,1,.51);
+}
+
+.pokemon:hover {
+  transform: scale(1.1);
+  z-index: 999;
+  box-shadow: 0 0 10px 0 var(--font-color-dark);
 }
 
 .pokemon.normal {
@@ -70,6 +80,84 @@
 .pokemon.fairy {
   background-color: var(--fairy);
 }
+
+/* .pokemon:hover colors */
+
+
+.pokemon.normal:hover {
+  box-shadow: 0 0 10px 0 var(--normal-dark);
+  background-color: var(--normal);
+}
+.pokemon.grass:hover {
+  box-shadow: 0 0 10px 0 var(--normal-dark);
+  background-color: var(--grass);
+}
+.pokemon.fire:hover {
+  box-shadow: 0 0 10px 0 var(--fire-dark);
+  background-color: var(--fire);
+}
+.pokemon.water:hover {
+  box-shadow: 0 0 10px 0 var(--water-dark);
+  background-color: var(--water);
+}
+.pokemon.eletric:hover {
+  box-shadow: 0 0 10px 0 var(--eletric-dark);
+  background-color: var(--eletric);
+}
+.pokemon.ice:hover {
+  box-shadow: 0 0 10px 0 var(--ice-dark);
+  background-color: var(--ice);
+}
+.pokemon.ground:hover {
+  box-shadow: 0 0 10px 0 var(--ground-dark);
+  background-color: var(--ground);
+}
+.pokemon.flying:hover {
+  box-shadow: 0 0 10px 0 var(--flying-dark);
+  background-color: var(--flying);
+}
+.pokemon.poison:hover {
+  box-shadow: 0 0 10px 0 var(--poison-dark);
+  background-color: var(--poison);
+}
+.pokemon.fighting:hover {
+  box-shadow: 0 0 10px 0 var(--fighting-dark);
+  background-color: var(--fighting);
+}
+.pokemon.psychic:hover {
+  box-shadow: 0 0 10px 0 var(--psychic-dark);
+  background-color: var(--psychic);
+}
+.pokemon.dark:hover {
+  box-shadow: 0 0 10px 0 var(--dark-dark);
+  background-color: var(--dark);
+}
+.pokemon.rock:hover {
+  box-shadow: 0 0 10px 0 var(--rock-dark);
+  background-color: var(--rock);
+}
+.pokemon.bug:hover {
+  box-shadow: 0 0 10px 0 var(--bug-dark);
+  background-color: var(--bug);
+}
+.pokemon.ghost:hover {
+  box-shadow: 0 0 10px 0 var(--ghost-dark);
+  background-color: var(--ghost);
+}
+.pokemon.steel:hover {
+  box-shadow: 0 0 10px 0 var(--steel-dark);
+  background-color: var(--steel);
+}
+.pokemon.dragon:hover {
+  box-shadow: 0 0 10px 0 (--dragon-dark);
+  background-color: var(--dragon);
+}
+.pokemon.fairy:hover {
+  box-shadow: 0 0 10px 0 var(--fairy-dark);
+  background-color: var(--fairy);
+}
+
+/* number */
 
 .pokemon .number {
   text-align: right;
