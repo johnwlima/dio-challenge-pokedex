@@ -1,7 +1,7 @@
 class Pokemon {
-    name;
-    number;
-    types;
-    image;
-    mainType;
+  name;
+  number;
+  types;
+  image;
+  mainType;
 }
