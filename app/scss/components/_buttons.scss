@@ -1,0 +1,29 @@
+// pagination
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+
+  & button {
+    background-color: var(--purple);
+    color: var(--font-color-light);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--purple);
+      color: var(--font-color-light);
+      box-shadow: 0px 0px 5px var(--purple);
+      transform: scale(1.1);
+    }
+  }
+}
