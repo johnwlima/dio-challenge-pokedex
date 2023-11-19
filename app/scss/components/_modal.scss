@@ -1,12 +1,72 @@
-// .modal {
-//     background-color: blue;
-//     position: fixed;
-//     width: 100vw;
-//     height: 100%;
-//     z-index: 10;
-//     overflow-y: auto;
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grass);
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 3;
+    overflow-y: auto;
 
-//     &__container {
-//         background-color: aqua;
-//     }
-// }
+    .__container {
+        margin-top: max(40px, 6vw);
+        z-index: 3;
+        background-color: transparent;
+
+        .__controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px;
+
+        }
+        
+        .__header {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px;
+            gap: 8px;
+            align-items: center;
+
+            &__details .types{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+            }
+            
+            &__details > h1{
+                margin-bottom: 0;
+            }
+        }
+
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            bottom: -32px;
+            z-index: 3;
+            
+            img {
+                width: min(60vw, 250px);
+            }
+        }
+
+    }
+
+    .__details {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        padding: 48px 16px 0px 16px;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
+        border-radius: 16px  16px 0px 0px;
+    }
+
+    .fa-regular .fa-regular {
+        color: red;
+    }
+}

@@ -22,7 +22,7 @@
 
 .pokemon:hover {
   transform: scale(1.1);
-  z-index: 999;
+  z-index: 2;
   box-shadow: 0 0 10px 0 var(--font-color-dark);
 }
 
