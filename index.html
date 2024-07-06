@@ -18,80 +18,27 @@
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="app/assets/img/Poké_Ball_icon.svg.png" type="image/x-icon">
+
     <!-- local css -->
     <link rel="stylesheet" href="dist/index.css">
 </head>
 <body>
 
-    <section class="modal">
-
-        <div class="__container">
-
-            <div class="__controls">
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-
-            <div class="__header">
-                <div class="__header__details">
-                    <h1>Bubassaur</h1>
-                    <ol class="types">
-                        <li class="type grass">grass</li>
-                        <li class="type grass">grass</li>
-                        <li class="type grass">grass</li>
-                    </ol>
-                </div>
-               
-                <span>#001</span>
-
-            </div>
-            
-            <div class="img">
-                <img src="app/assets/img/Bubassaur.webp" alt="Bubassaur">
-            </div>
-
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModalBtn">&times;</span>
+          <div class="modal-header">
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium optio soluta explicabo consequatur, id illo voluptatibus, laudantium tempora, a itaque vero est fugit. Sit sed quidem officiis maiores similique!
+          </div>
         </div>
-
-        <div class="__details">
-            <div class="buttons">
-                <button type="button" class="Info">Info</button>
-                <button type="button" class="Evolution">Evolution</button>
-                <button type="button" class="moves">Moves</button>
-            </div>
-
-            <p class="description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolores sint illo magnam. Voluptate unde in totam distinctio aspernatur incidunt itaque consequatur exercitationem, repudiandae iure non quam numquam ex ut.
-            </p>
-
-            <ul class="status">
-                <li>
-                    <span>HP</span>
-                    <!-- bar -->
-                </li>
-                <li>
-                    <span>ATK</span>
-                    <!-- bar -->
-                </li>
-                <li>
-                    <span>DEF</span>
-                    <!-- bar -->
-                </li>
-                <li>
-                    <span>SATK</span>
-                    <!-- bar -->
-                </li>
-                <li>
-                    <span>SDEF</span>
-                    <!-- bar -->
-                </li>
-                <li>
-                    <span>SPD</span>
-                    <!-- bar -->
-                </li>
-            </ul>
-        </div>
-
-    </section>
+    </div>  
 
     <section class="content">
         <h1>Pokedex</h1>
@@ -108,5 +55,6 @@
     <script src="app/js/pokemon-model.js"></script>
     <script src="app/js/poke-api.js"></script>
     <script src="app/js/main.js"></script>
+    <script src="app/js/modal.js"></script>
 </body>
 </html>
