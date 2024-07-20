@@ -1,0 +1,101 @@
+.btn-popup {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  z-index: 1000000000;
+  background: #89C592;
+  padding: 20vh 0px 0px 0px;
+  border-radius: 8px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  font-family: inherit;
+  align-self: center;
+  justify-self: center;
+
+  .close-button {
+      align-self: left;
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh ;
+  }
+
+  img {
+    width: 60%;
+    
+  }
+
+  &-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  &-container {
+      z-index: 1000000001;
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+    height: 100%;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: 8px;
+      flex-wrap: wrap;
+
+    }
+
+    li {
+      width: auto;
+      padding: 8px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  p.type::after {
+    content: "―――";
+  }
+  
+  p.type::before {
+    content: "―――";
+  }
+  
+}
+
