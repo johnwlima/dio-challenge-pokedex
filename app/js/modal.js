@@ -9,7 +9,7 @@ function modal() {
       modal.style.display ="none"
   }
   
-  ativaPeloTitulo = () => {
+  ativaModalClicandoNoTitulo = () => {
     h1.addEventListener("click", () => {
       modal.style.display ="flex"
       body.style.overflowY = "hidden"
@@ -19,13 +19,29 @@ function modal() {
   desativaModalNoClick = () => {
     closePopup.addEventListener("click", () => {
       modal.style.display ="none"
+      body.style.overflowY = "auto"
     })
   }
   
-  ativaPeloTitulo()
+  ativaModalClicandoNoTitulo()
   desativaModal()
   desativaModalNoClick()
 
 }
 
-modal()
+// modal()
+
+// desativa scroll do body
+
+function desativaScroolBody() {
+  const body = document.querySelector("body")
+  body.style.overflowY = "hidden"
+}
+
+desativaModal = () => { 
+  const modal = document.querySelector(".popup-wrapper")
+  modal.style.display ="none"
+}
+
+// desativaModal()
+// desativaScroolBody()
