@@ -29,7 +29,7 @@ function modal() {
 
 }
 
-// modal()
+modal()
 
 // desativa scroll do body
 
