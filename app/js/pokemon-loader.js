@@ -11,7 +11,7 @@ function pokemonLoaderCardsinfo() {
         .map(
           (pokemon) => `
           
-              <li class="pokemon ${pokemon.mainType}">
+              <li id="pokemon ${pokemon.number}" class="pokemon ${pokemon.mainType}">
                   <span class="number ${pokemon.mainType}">#${
             pokemon.number
           }</span>
